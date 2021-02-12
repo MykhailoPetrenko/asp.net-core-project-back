@@ -5,7 +5,7 @@ namespace Party.DB
     public class Osoba
     {
         [Key]
-        public int Id { get; set; }
+        public int IdOsoba { get; set; }
         [Required]
         public string Imie { get; set; }
         [Required]

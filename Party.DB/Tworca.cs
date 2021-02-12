@@ -6,7 +6,7 @@ namespace Party.DB
     public class Tworca
     {
         [Key]
-        public int Id { get; set; }
+        public int IdTworca { get; set; }
         [Required]
         public string NrKonta { get; set; }
         [Required]

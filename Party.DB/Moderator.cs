@@ -6,7 +6,7 @@ namespace Party.DB
     public class Moderator
     {
         [Key]
-        public int Id { get; set; }
+        public int IdModerator { get; set; }
         
         public List<Doswiadczenie> Doswiadczenie { get; set; } = new List<Doswiadczenie>();
     }

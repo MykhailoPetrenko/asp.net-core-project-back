@@ -5,7 +5,7 @@ namespace Party.DB
     public class Zamknieta
     {
         [Key]
-        public int Id { get; set; }
+        public int IdZamknieta { get; set; }
         [Required]
         public string Haslo { get; set; }
     }

@@ -6,7 +6,7 @@ namespace Party.DB
     public class Reklama
     {
         [Key]
-        public int Id { get; set; }
+        public int IdReklama { get; set; }
         [Required]
         public DateTime DataOd { get; set; }
         [Required]

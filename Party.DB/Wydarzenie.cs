@@ -8,7 +8,7 @@ namespace Party.DB
     public class Wydarzenie
     {
         [Key]
-        public int Id { get; set; }
+        public int IdWydarzenie { get; set; }
         [Required]
         public DateTime DataPrzeprowadzenia { get; set; }
         [Required]

@@ -25,6 +25,7 @@
         <e p="Otwarta.cs" t="Include" />
         <e p="Party.DB.csproj" t="IncludeRecursive" />
         <e p="Preferencja.cs" t="Include" />
+        <e p="PreferencjaUczestnika.cs" t="Include" />
         <e p="Prywatny.cs" t="Include" />
         <e p="Reklama.cs" t="Include" />
         <e p="Skarga.cs" t="Include" />

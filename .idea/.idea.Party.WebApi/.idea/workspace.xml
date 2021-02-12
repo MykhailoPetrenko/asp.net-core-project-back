@@ -23,26 +23,27 @@
         <option value="$PROJECT_DIR$/Party.WebApi/Controllers/PartyController.cs" />
         <option value="$PROJECT_DIR$/Party.DB/Class1.cs" />
         <option value="$PROJECT_DIR$/Party.DB/Party.cs" />
-        <option value="$PROJECT_DIR$/Party.DB/AppDbContext.cs" />
         <option value="$PROJECT_DIR$/Party.DB/Zwykly.cs" />
-        <option value="$PROJECT_DIR$/Party.DB/Otwarta.cs" />
-        <option value="$PROJECT_DIR$/Party.DB/Miejsce.cs" />
-        <option value="$PROJECT_DIR$/Party.DB/Kometaz.cs" />
+        <option value="$PROJECT_DIR$/Party.DB/Kategoria.cs" />
+        <option value="$PROJECT_DIR$/Party.DB/WecieczkaType.cs" />
+        <option value="$PROJECT_DIR$/Party.DB/Uczestnik.cs" />
         <option value="$PROJECT_DIR$/Party.DB/Doswiadczenie.cs" />
+        <option value="$PROJECT_DIR$/Party.DB/Kometaz.cs" />
+        <option value="$PROJECT_DIR$/Party.DB/Miejsce.cs" />
         <option value="$PROJECT_DIR$/Party.DB/Moderator.cs" />
         <option value="$PROJECT_DIR$/Party.DB/Ocena.cs" />
         <option value="$PROJECT_DIR$/Party.DB/Osoba.cs" />
-        <option value="$PROJECT_DIR$/Party.DB/Kategoria.cs" />
-        <option value="$PROJECT_DIR$/Party.DB/Preferencja.cs" />
+        <option value="$PROJECT_DIR$/Party.DB/Otwarta.cs" />
         <option value="$PROJECT_DIR$/Party.DB/Prywatny.cs" />
         <option value="$PROJECT_DIR$/Party.DB/Reklama.cs" />
         <option value="$PROJECT_DIR$/Party.DB/Skarga.cs" />
         <option value="$PROJECT_DIR$/Party.DB/Tworca.cs" />
-        <option value="$PROJECT_DIR$/Party.DB/Uczestnik.cs" />
-        <option value="$PROJECT_DIR$/Party.DB/WecieczkaType.cs" />
         <option value="$PROJECT_DIR$/Party.DB/Wydarzenie.cs" />
         <option value="$PROJECT_DIR$/Party.DB/Zamknieta.cs" />
         <option value="$PROJECT_DIR$/Party.DB/Zdjecie.cs" />
+        <option value="$PROJECT_DIR$/Party.DB/Preferencja.cs" />
+        <option value="$PROJECT_DIR$/Party.DB/PreferencjaUczestnika.cs" />
+        <option value="$PROJECT_DIR$/Party.DB/AppDbContext.cs" />
       </list>
     </option>
   </component>
@@ -104,7 +105,7 @@
       <workItem from="1613084883476" duration="1022000" />
       <workItem from="1613086025020" duration="1380000" />
       <workItem from="1613087451434" duration="330000" />
-      <workItem from="1613169235319" duration="2853000" />
+      <workItem from="1613169235319" duration="4108000" />
     </task>
     <servers />
   </component>

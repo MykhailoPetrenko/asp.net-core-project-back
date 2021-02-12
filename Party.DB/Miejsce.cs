@@ -6,7 +6,7 @@ namespace Party.DB
     public class Miejsce
     {
         [Key]
-        public int Id { get; set; }
+        public int IdMiejsce { get; set; }
         [Required]
         [MaxLength(255)]
         public string Nazwa { get; set; } 

@@ -6,7 +6,7 @@ namespace Party.DB
     public class Kometaz
     {
         [Key]
-        public int Id { get; set; }
+        public int IdKometaz { get; set; }
         [Required]
         [MaxLength(255)]
         public string Tresc { get; set; }
