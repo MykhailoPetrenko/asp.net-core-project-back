@@ -1,0 +1,14 @@
+﻿using System;
+using System.ComponentModel.DataAnnotations;
+
+namespace Party.DB
+{
+    public class Kometaz
+    {
+        [Key]
+        public int Id { get; set; }
+        [Required]
+        [MaxLength(255)]
+        public string Tresc { get; set; }
+    }
+}
