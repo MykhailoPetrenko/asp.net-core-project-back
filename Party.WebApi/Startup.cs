@@ -51,7 +51,10 @@ namespace Party.WebApi
                         };
                     });
             services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=party;Integrated Security=True"));
-            services.AddControllers();
+            services.AddControllers()
+                .AddNewtonsoftJson(options =>
+                     options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
+                );
             services.AddTransient<IPartyService, PartyServices>();
 
         }

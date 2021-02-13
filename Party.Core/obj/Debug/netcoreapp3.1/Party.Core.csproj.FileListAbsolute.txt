@@ -1,0 +1,12 @@
+C:\Users\Mykhailo\source\repos\Party.WebApi\Party.Core\bin\Debug\netcoreapp3.1\Party.DB.dll
+C:\Users\Mykhailo\source\repos\Party.WebApi\Party.Core\obj\Debug\netcoreapp3.1\Party.Core.csprojAssemblyReference.cache
+C:\Users\Mykhailo\source\repos\Party.WebApi\Party.Core\obj\Debug\netcoreapp3.1\Party.Core.AssemblyInfoInputs.cache
+C:\Users\Mykhailo\source\repos\Party.WebApi\Party.Core\obj\Debug\netcoreapp3.1\Party.Core.AssemblyInfo.cs
+C:\Users\Mykhailo\source\repos\Party.WebApi\Party.Core\bin\Debug\netcoreapp3.1\Party.Core.deps.json
+C:\Users\Mykhailo\source\repos\Party.WebApi\Party.Core\bin\Debug\netcoreapp3.1\Party.Core.dll
+C:\Users\Mykhailo\source\repos\Party.WebApi\Party.Core\bin\Debug\netcoreapp3.1\Party.Core.pdb
+C:\Users\Mykhailo\source\repos\Party.WebApi\Party.Core\bin\Debug\netcoreapp3.1\Party.DB.pdb
+C:\Users\Mykhailo\source\repos\Party.WebApi\Party.Core\obj\Debug\netcoreapp3.1\Party.Core.csproj.CoreCompileInputs.cache
+C:\Users\Mykhailo\source\repos\Party.WebApi\Party.Core\obj\Debug\netcoreapp3.1\Party.Core.csproj.CopyComplete
+C:\Users\Mykhailo\source\repos\Party.WebApi\Party.Core\obj\Debug\netcoreapp3.1\Party.Core.dll
+C:\Users\Mykhailo\source\repos\Party.WebApi\Party.Core\obj\Debug\netcoreapp3.1\Party.Core.pdb

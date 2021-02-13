@@ -58,7 +58,6 @@ C:\Users\Mykhailo\source\repos\Party.WebApi\Party.WebApi\bin\Debug\netcoreapp3.1
 C:\Users\Mykhailo\source\repos\Party.WebApi\Party.WebApi\bin\Debug\netcoreapp3.1\Party.DB.dll
 C:\Users\Mykhailo\source\repos\Party.WebApi\Party.WebApi\bin\Debug\netcoreapp3.1\Party.Core.pdb
 C:\Users\Mykhailo\source\repos\Party.WebApi\Party.WebApi\bin\Debug\netcoreapp3.1\Party.DB.pdb
-C:\Users\Mykhailo\source\repos\Party.WebApi\Party.WebApi\bin\Debug\netcoreapp3.1\Party.DB.dll.config
 C:\Users\Mykhailo\source\repos\Party.WebApi\Party.WebApi\obj\Debug\netcoreapp3.1\Party.WebApi.csprojAssemblyReference.cache
 C:\Users\Mykhailo\source\repos\Party.WebApi\Party.WebApi\obj\Debug\netcoreapp3.1\Party.WebApi.AssemblyInfoInputs.cache
 C:\Users\Mykhailo\source\repos\Party.WebApi\Party.WebApi\obj\Debug\netcoreapp3.1\Party.WebApi.AssemblyInfo.cs
@@ -72,3 +71,6 @@ C:\Users\Mykhailo\source\repos\Party.WebApi\Party.WebApi\obj\Debug\netcoreapp3.1
 C:\Users\Mykhailo\source\repos\Party.WebApi\Party.WebApi\obj\Debug\netcoreapp3.1\Party.WebApi.dll
 C:\Users\Mykhailo\source\repos\Party.WebApi\Party.WebApi\obj\Debug\netcoreapp3.1\Party.WebApi.pdb
 C:\Users\Mykhailo\source\repos\Party.WebApi\Party.WebApi\obj\Debug\netcoreapp3.1\Party.WebApi.genruntimeconfig.cache
+C:\Users\Mykhailo\source\repos\Party.WebApi\Party.WebApi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Mykhailo\source\repos\Party.WebApi\Party.WebApi\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Mykhailo\source\repos\Party.WebApi\Party.WebApi\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll

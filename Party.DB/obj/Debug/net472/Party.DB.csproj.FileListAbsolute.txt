@@ -53,3 +53,4 @@ C:\Users\Mykhailo\source\repos\Party.WebApi\Party.DB\obj\Debug\net472\Party.DB.c
 C:\Users\Mykhailo\source\repos\Party.WebApi\Party.DB\obj\Debug\net472\Party.DB.csproj.CopyComplete
 C:\Users\Mykhailo\source\repos\Party.WebApi\Party.DB\obj\Debug\net472\Party.DB.dll
 C:\Users\Mykhailo\source\repos\Party.WebApi\Party.DB\obj\Debug\net472\Party.DB.pdb
+C:\Users\Mykhailo\source\repos\Party.WebApi\Party.DB\obj\Debug\net472\Party.DB.csprojAssemblyReference.cache

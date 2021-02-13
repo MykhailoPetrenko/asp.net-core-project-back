@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using System;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using System.Linq;
 using Newtonsoft.Json;
@@ -29,8 +30,12 @@ namespace Party.WebApi.Controllers
         [HttpGet("{wydarzenieId}",Name = "GetAllUczestnikuwWydarzenia")]
         public IActionResult GetAllUczestnikuwWydarzenia(int wydarzenieId)
         {
-            var wydarzenie = _party.GetUczestnikiWydarzenia(wydarzenieId);
-            return Ok(wydarzenie);
+            return Ok( _party.GetUczestnikiWydarzenia(wydarzenieId));
+        }
+        [HttpGet("{date}",Name = "GetWydarzeniaByDate")]
+        public IActionResult GetWydarzeniaByDate(DateTime date)
+        {
+            return Ok( _party.GetWydarzeniaByDate(date));
         }
 
 

@@ -9,5 +9,6 @@ namespace Party.Core
     {
         IEnumerable<Wydarzenie> GetWydarzenia();
         Wydarzenie GetUczestnikiWydarzenia(int wydarzenie);
+        IEnumerable<Wydarzenie> GetWydarzeniaByDate(DateTime data);
     }
 }

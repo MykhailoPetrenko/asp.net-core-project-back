@@ -24,7 +24,7 @@ namespace Party.Core
         {
 
             var first = _context.Wydarzenies.Where(w => w.IdWydarzenie == wydarzenie)
-                .Include(uw => uw.UczestnikWydarzenie)
+                .Include(uw => uw.UczestnikWydarzenie) 
                 .ThenInclude(u => u.Uczestnik)
                 .FirstOrDefault();
             
@@ -33,6 +33,10 @@ namespace Party.Core
                 .Select(s => s.Uczestnik)
                 .ToList();*/
             return first;
+        }
+        public IEnumerable<Wydarzenie> GetWydarzeniaByDate(DateTime data)
+        {
+            return _context.Wydarzenies.Where(w => w.DataPrzeprowadzenia == data).ToList();
         }
     }
 }
