@@ -10,5 +10,7 @@ namespace Party.DB
         [Required]
         [MaxLength(255)]
         public string Tresc { get; set; }
+        
+        public Wydarzenie Wydarzenie { get; set; }
     }
 }

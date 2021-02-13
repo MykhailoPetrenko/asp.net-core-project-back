@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Drawing;
 
 namespace Party.DB
@@ -11,5 +12,8 @@ namespace Party.DB
         [MaxLength(255)]
         public string Nazwa { get; set; } 
         public Point? Koordynaty { get; set; }
+        
+        public ICollection<WydarzenieMiejsce> WydarzenieMiejsce { get; set; }
+
     }
 }

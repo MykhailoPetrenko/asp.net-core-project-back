@@ -4,25 +4,59 @@ namespace Party.DB
 {
     public class AppDbContext: DbContext
     {
-        //public DbSet<Party> Parties { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(
                 @"Server=(localdb)\mssqllocaldb;Database=party;Integrated Security=True");
         }
-        /*protected override void OnModelCreating(ModelBuilder modelBuilder)
+        
+        public DbSet<Uczestnik> Books { get; set; }
+        public DbSet<Preferencja> Categories { get; set; }
+        public DbSet<PreferencjaUczestnika> BookCategories { get; set; }
+        
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            //Preferencja Uczestnika
             modelBuilder.Entity<PreferencjaUczestnika>()
                 .HasKey(pr => new { pr.IdPreferencja,pr.IdUczestnik });  
             modelBuilder.Entity<PreferencjaUczestnika>()
-                .HasOne(bc => bc)
-                .WithMany(b => b.BookCategories)
-                .HasForeignKey(bc => bc.BookId);  
+                .HasOne(bc => bc.IdPreferencjaNavigation)
+                .WithMany(b => b.PreferencjaUczestnika)
+                .HasForeignKey(bc => bc.IdPreferencja);  
             modelBuilder.Entity<PreferencjaUczestnika>()
-                .HasOne(bc => bc.Category)
-                .WithMany(c => c.BookCategories)
-                .HasForeignKey(bc => bc.CategoryId);
-        }*/
+                .HasOne(bc => bc.IdUczestnikNavigation)
+                .WithMany(c => c.PreferencjaUczestnika)
+                .HasForeignKey(bc => bc.IdUczestnik);
+            //Tworca -> Wydarzenie
+            modelBuilder.Entity<Tworca>()
+                .HasMany(c => c.Wydarzenia)
+                .WithOne(e => e.Tworca);
+            //Wydarzenie Reklama
+            
+            //Wydarzenie Miejsce
+            modelBuilder.Entity<WydarzenieMiejsce>()
+                .HasKey(pr => new { pr.IdWydarzenie,pr.IdMiejsce });  
+            modelBuilder.Entity<WydarzenieMiejsce>()
+                .HasOne(bc => bc.IdWydarzenieNavigation)
+                .WithMany(b => b.WydarzenieMiejsce)
+                .HasForeignKey(bc => bc.IdWydarzenie);  
+            modelBuilder.Entity<WydarzenieMiejsce>()
+                .HasOne(bc => bc.IdMiejsceNavigation)
+                .WithMany(c => c.WydarzenieMiejsce)
+                .HasForeignKey(bc => bc.IdMiejsce);
+            //Wydarzenie Skarga
+            modelBuilder.Entity<Wydarzenie>()
+                .HasMany(c => c.Skarga)
+                .WithOne(e => e.Wydarzenie);
+            //Wydarzenie Kometaz
+            modelBuilder.Entity<Wydarzenie>()
+                .HasMany(c => c.Kometaze)
+                .WithOne(e => e.Wydarzenie);
+            //Wydarzenie Ocena
+            modelBuilder.Entity<Wydarzenie>()
+                .HasMany(c => c.Oceny)
+                .WithOne(e => e.Wydarzenie);
+        }
     }
 }

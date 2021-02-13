@@ -12,7 +12,7 @@ namespace Party.DB
         [Required]
         public Kategoria Kategoria { get; set; }
         
-        public virtual ICollection<PreferencjaUczestnika> PreferencjaUczestnika { get; set; }
+        public ICollection<PreferencjaUczestnika> PreferencjaUczestnika { get; set; }
 
     }
 }

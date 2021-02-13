@@ -14,9 +14,14 @@ namespace Party.DB
         [Required]
         public WecieczkaType Typ { get; set; }
         public string Opis { get; set; } = string.Empty;
-        public List<Kometaz> Kometaz { get; set; } = new List<Kometaz>();
-        public List<Ocena> Ocena { get; set; } = new List<Ocena>();
         public List<Kategoria> Kategoria { get; set; } = new List<Kategoria>();
+
+        public Tworca Tworca { get; set; }
+        public ICollection<WydarzenieMiejsce> WydarzenieMiejsce { get; set; }
+        public ICollection<Skarga> Skarga { get; set; }
+        public ICollection<Kometaz> Kometaze { get; set; }
+        public ICollection<Ocena> Oceny { get; set; }
+
         
     }
 }

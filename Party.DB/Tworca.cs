@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections;
+using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
 namespace Party.DB
@@ -11,5 +13,7 @@ namespace Party.DB
         public string NrKonta { get; set; }
         [Required]
         public Double StanKonta { get; set; }
+        
+        public ICollection<Wydarzenie> Wydarzenia { get; set; }
     }
 }

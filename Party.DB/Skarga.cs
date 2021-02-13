@@ -8,5 +8,7 @@ namespace Party.DB
         public int IdSkarga { get; set; }
         [Required]
         public string Tresc { get; set; }
+        
+        public Wydarzenie Wydarzenie { get; set; }
     }
 }

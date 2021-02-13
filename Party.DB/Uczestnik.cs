@@ -10,7 +10,7 @@ namespace Party.DB
         [Required]
         public string Status { get; set; }
 
-        public virtual ICollection<PreferencjaUczestnika> PreferencjaUczestnika { get; set; }
+        public ICollection<PreferencjaUczestnika> PreferencjaUczestnika { get; set; }
 
     }
 }

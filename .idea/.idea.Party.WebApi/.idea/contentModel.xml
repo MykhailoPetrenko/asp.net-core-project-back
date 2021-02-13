@@ -33,6 +33,7 @@
         <e p="Uczestnik.cs" t="Include" />
         <e p="WecieczkaType.cs" t="Include" />
         <e p="Wydarzenie.cs" t="Include" />
+        <e p="WydarzenieMiejsce.cs" t="Include" />
         <e p="Zamknieta.cs" t="Include" />
         <e p="Zdjecie.cs" t="Include" />
         <e p="Zwykly.cs" t="Include" />
