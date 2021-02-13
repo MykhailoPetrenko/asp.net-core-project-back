@@ -22,6 +22,7 @@ namespace Party.DB
         public ICollection<Kometaz> Kometaze { get; set; }
         public ICollection<Ocena> Oceny { get; set; }
         public ICollection<WydarzenieKategoria> WydarzenieKategoria { get; set; }
+        public ICollection<UczestnikWydarzenie> UczestnikWydarzenie { get; set; }
 
 
 

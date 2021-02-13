@@ -15,6 +15,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Party.Core;
 
 namespace Party.WebApi
 {
@@ -31,8 +32,8 @@ namespace Party.WebApi
         public void ConfigureServices(IServiceCollection services)
         {
 
+            //.AddScheme<AuthenticationSchemeOptions, JwtAuthHandler>(SchemeName.FirebaseAuthScheme, o => { })
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-                    .AddScheme<AuthenticationSchemeOptions, JwtAuthHandler>(SchemeName.FirebaseAuthScheme, o => { })
                     .AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, options =>
                     {
                         string authority = "https://securetoken.google.com/mas-project-ae223";
@@ -51,6 +52,7 @@ namespace Party.WebApi
                     });
             services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=party;Integrated Security=True"));
             services.AddControllers();
+            services.AddTransient<IPartyService, PartyServices>();
 
         }
 

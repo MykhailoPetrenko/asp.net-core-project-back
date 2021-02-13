@@ -70,7 +70,9 @@ namespace Party.WebApi.Filters
 			{
 				return await FirebaseAuth.DefaultInstance.VerifyIdTokenAsync(token);
 			}
-			catch (Exception) { }
+			catch (Exception e) {
+				var t = e;
+					}
 			return null;
 		}
 

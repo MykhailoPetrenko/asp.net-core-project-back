@@ -5,10 +5,8 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Party.DB
 {
-    public class Tworca
+    public class Tworca: Osoba
     {
-        [Key]
-        public int IdTworca { get; set; }
         [Required]
         public string NrKonta { get; set; }
         [Required]

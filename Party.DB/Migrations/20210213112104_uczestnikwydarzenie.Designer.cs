@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Party.DB;
 
 namespace Party.DB.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210213112104_uczestnikwydarzenie")]
+    partial class uczestnikwydarzenie
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -166,22 +168,10 @@ namespace Party.DB.Migrations
 
             modelBuilder.Entity("Party.DB.Tworca", b =>
                 {
-                    b.Property<int>("IdOsoba")
+                    b.Property<int>("IdTworca")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Imie")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Nazwisko")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NrKonta")
                         .IsRequired()
@@ -190,41 +180,23 @@ namespace Party.DB.Migrations
                     b.Property<double>("StanKonta")
                         .HasColumnType("float");
 
-                    b.Property<int>("Wiek")
-                        .HasColumnType("int");
-
-                    b.HasKey("IdOsoba");
+                    b.HasKey("IdTworca");
 
                     b.ToTable("Tworca");
                 });
 
             modelBuilder.Entity("Party.DB.Uczestnik", b =>
                 {
-                    b.Property<int>("IdOsoba")
+                    b.Property<int>("IdUczestnik")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("int")
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
-
-                    b.Property<string>("Email")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Imie")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Nazwisko")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Status")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("Wiek")
-                        .HasColumnType("int");
-
-                    b.HasKey("IdOsoba");
+                    b.HasKey("IdUczestnik");
 
                     b.ToTable("Uczestnik");
                 });
@@ -260,7 +232,7 @@ namespace Party.DB.Migrations
                     b.Property<string>("Opis")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("TworcaIdOsoba")
+                    b.Property<int?>("TworcaIdTworca")
                         .HasColumnType("int");
 
                     b.Property<int>("Typ")
@@ -268,7 +240,7 @@ namespace Party.DB.Migrations
 
                     b.HasKey("IdWydarzenie");
 
-                    b.HasIndex("TworcaIdOsoba");
+                    b.HasIndex("TworcaIdTworca");
 
                     b.ToTable("Wydarzenies");
                 });
@@ -380,7 +352,7 @@ namespace Party.DB.Migrations
                 {
                     b.HasOne("Party.DB.Tworca", "Tworca")
                         .WithMany("Wydarzenia")
-                        .HasForeignKey("TworcaIdOsoba");
+                        .HasForeignKey("TworcaIdTworca");
                 });
 
             modelBuilder.Entity("Party.DB.WydarzenieKategoria", b =>

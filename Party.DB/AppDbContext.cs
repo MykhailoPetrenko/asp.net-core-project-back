@@ -35,6 +35,8 @@ namespace Party.DB
 
         public DbSet<Kategoria> Kategoria { get; set; }
         public DbSet<WydarzenieKategoria> WydarzenieKategoria { get; set; }
+        public DbSet<UczestnikWydarzenie> UczestnikWydarzenie { get; set; }
+ 
 
 
         
@@ -93,6 +95,17 @@ namespace Party.DB
                 .HasOne(bc => bc.IdKategoriaNavigation)
                 .WithMany(c => c.WydarzenieKategoria)
                 .HasForeignKey(bc => bc.IdKategoria);
+            //Wydarzenie Uczestnik
+            modelBuilder.Entity<UczestnikWydarzenie>()
+                .HasKey(pr => new { pr.IdWydarzenie, pr.IdUczestnik });
+            modelBuilder.Entity<UczestnikWydarzenie>()
+                .HasOne(bc => bc.IdWydarzenieNavigation)
+                .WithMany(b => b.UczestnikWydarzenie)
+                .HasForeignKey(bc => bc.IdWydarzenie);
+            modelBuilder.Entity<UczestnikWydarzenie>()
+                .HasOne(bc => bc.IdUczestnikNavigation)
+                .WithMany(c => c.UczestnikWydarzenie)
+                .HasForeignKey(bc => bc.IdUczestnik);
 
         }
     }

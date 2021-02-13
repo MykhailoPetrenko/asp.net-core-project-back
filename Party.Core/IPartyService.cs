@@ -1,10 +1,13 @@
-﻿using System;
+﻿using Party.DB;
+using System;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Party.Core
 {
-    interface IPartyService
+    public interface IPartyService
     {
+        IEnumerable<Wydarzenie> GetWydarzenia();
+        IEnumerable<Uczestnik> GetUczestnikiWydarzenia(int wydarzenie);
     }
 }

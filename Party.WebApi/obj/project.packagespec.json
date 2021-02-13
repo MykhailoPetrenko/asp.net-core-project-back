@@ -15,7 +15,14 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "projectReferences": {}
+        "projectReferences": {
+          "C:\\Users\\Mykhailo\\source\\repos\\Party.WebApi\\Party.Core\\Party.Core.csproj": {
+            "projectPath": "C:\\Users\\Mykhailo\\source\\repos\\Party.WebApi\\Party.Core\\Party.Core.csproj"
+          },
+          "C:\\Users\\Mykhailo\\source\\repos\\Party.WebApi\\Party.DB\\Party.DB.csproj": {
+            "projectPath": "C:\\Users\\Mykhailo\\source\\repos\\Party.WebApi\\Party.DB\\Party.DB.csproj"
+          }
+        }
       }
     },
     "warningProperties": {
@@ -27,6 +34,10 @@
   "frameworks": {
     "netcoreapp3.1": {
       "dependencies": {
+        "FirebaseAdmin": {
+          "target": "Package",
+          "version": "[2.0.0, )"
+        },
         "Microsoft.AspNetCore.Authentication": {
           "target": "Package",
           "version": "[2.2.0, )"
@@ -44,6 +55,12 @@
           "version": "[3.1.12, )"
         },
         "Microsoft.EntityFrameworkCore": {
+          "target": "Package",
+          "version": "[3.1.12, )"
+        },
+        "Microsoft.EntityFrameworkCore.Design": {
+          "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+          "suppressParent": "All",
           "target": "Package",
           "version": "[3.1.12, )"
         },

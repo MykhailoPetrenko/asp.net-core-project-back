@@ -1,10 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
-using System;
-using System.Collections.Generic;
 using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
+using Newtonsoft.Json;
+using Party.Core;
 
 namespace Party.WebApi.Controllers
 {
@@ -12,18 +10,20 @@ namespace Party.WebApi.Controllers
     {
 
         private readonly ILogger<PartyController> _logger;
+        private readonly IPartyService _party;
 
-        public PartyController(ILogger<PartyController> logger)
+        public PartyController(ILogger<PartyController> logger, IPartyService party)
         {
             _logger = logger;
+            _party = party;
         }
 
         [HttpGet]
         public IActionResult Get()
         {
-            var t = User.Identity!.Name;
-            var tt = ((System.Security.Claims.ClaimsIdentity)User.Identity).Claims.ToList();
-            return Ok("Note");
+            string userId = ((System.Security.Claims.ClaimsIdentity)User.Identity).Claims.ToList()[3].Value;
+           
+            return Ok(_party.GetWydarzenia());
         }
 
     }

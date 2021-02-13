@@ -3,14 +3,14 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Party.DB
 {
-    public class Uczestnik
+    public class Uczestnik: Osoba
     {
-        [Key]
-        public int IdUczestnik { get; set; }
         [Required]
         public string Status { get; set; }
 
         public ICollection<PreferencjaUczestnika> PreferencjaUczestnika { get; set; }
+        public ICollection<UczestnikWydarzenie> UczestnikWydarzenie { get; set; }
+
 
     }
 }
