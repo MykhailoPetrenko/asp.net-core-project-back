@@ -1,0 +1,134 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\Mykhailo\\source\\repos\\Party.WebApi\\Party.Core\\Party.Core.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\Mykhailo\\source\\repos\\Party.WebApi\\Party.Core\\Party.Core.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Mykhailo\\source\\repos\\Party.WebApi\\Party.Core\\Party.Core.csproj",
+        "projectName": "Party.Core",
+        "projectPath": "C:\\Users\\Mykhailo\\source\\repos\\Party.WebApi\\Party.Core\\Party.Core.csproj",
+        "packagesPath": "C:\\Users\\Mykhailo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mykhailo\\source\\repos\\Party.WebApi\\Party.Core\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Mykhailo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netstandard2.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netstandard2.0": {
+            "targetAlias": "netstandard2.0",
+            "projectReferences": {
+              "C:\\Users\\Mykhailo\\source\\repos\\Party.WebApi\\Party.DB\\Party.DB.csproj": {
+                "projectPath": "C:\\Users\\Mykhailo\\source\\repos\\Party.WebApi\\Party.DB\\Party.DB.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netstandard2.0": {
+          "targetAlias": "netstandard2.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.12, )"
+            },
+            "NETStandard.Library": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.0.3, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\Mykhailo\\source\\repos\\Party.WebApi\\Party.DB\\Party.DB.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\Mykhailo\\source\\repos\\Party.WebApi\\Party.DB\\Party.DB.csproj",
+        "projectName": "Party.DB",
+        "projectPath": "C:\\Users\\Mykhailo\\source\\repos\\Party.WebApi\\Party.DB\\Party.DB.csproj",
+        "packagesPath": "C:\\Users\\Mykhailo\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Mykhailo\\source\\repos\\Party.WebApi\\Party.DB\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\Mykhailo\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net472"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net472": {
+            "targetAlias": "net472",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "net472": {
+          "targetAlias": "net472",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[3.1.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[3.1.12, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.1.12, )"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.103\\RuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}

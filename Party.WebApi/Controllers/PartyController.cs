@@ -21,7 +21,10 @@ namespace Party.WebApi.Controllers
         [HttpGet]
         public IActionResult Get()
         {
+            var t = User.Identity!.Name;
+            var tt = ((System.Security.Claims.ClaimsIdentity)User.Identity).Claims.ToList();
             return Ok("Note");
         }
+
     }
 }

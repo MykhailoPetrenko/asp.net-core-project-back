@@ -10,9 +10,11 @@ namespace Party.DB
         public int IdMiejsce { get; set; }
         [Required]
         [MaxLength(255)]
-        public string Nazwa { get; set; } 
-        public Point? Koordynaty { get; set; }
-        
+        public string Nazwa { get; set; }
+        public int Latitude { get; set; }
+        public int Longitude { get; set; }
+
+
         public ICollection<WydarzenieMiejsce> WydarzenieMiejsce { get; set; }
 
     }

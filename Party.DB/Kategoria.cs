@@ -1,9 +1,14 @@
-﻿namespace Party.DB
+﻿using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+
+namespace Party.DB
 {
-    public enum Kategoria
+    public class Kategoria
     {
-        SPORT,
-        MUZYKA,
-        KOMPIUTERY
+        [Key]
+        public int IdKategoria{ get; set; }
+        public int Nazwa{ get; set; }
+
+        public ICollection<WydarzenieKategoria> WydarzenieKategoria { get; set; }
     }
 }

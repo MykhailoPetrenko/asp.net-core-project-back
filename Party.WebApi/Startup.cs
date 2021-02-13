@@ -1,12 +1,16 @@
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
+using Party.DB;
+using Party.WebApi.Filters;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -28,6 +32,7 @@ namespace Party.WebApi
         {
 
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
+                    .AddScheme<AuthenticationSchemeOptions, JwtAuthHandler>(SchemeName.FirebaseAuthScheme, o => { })
                     .AddJwtBearer(JwtBearerDefaults.AuthenticationScheme, options =>
                     {
                         string authority = "https://securetoken.google.com/mas-project-ae223";
@@ -44,6 +49,7 @@ namespace Party.WebApi
                             ValidateLifetime = true,
                         };
                     });
+            services.AddDbContext<AppDbContext>(opt => opt.UseSqlServer(@"Server=(localdb)\mssqllocaldb;Database=party;Integrated Security=True"));
             services.AddControllers();
 
         }

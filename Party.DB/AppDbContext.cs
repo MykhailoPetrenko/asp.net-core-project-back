@@ -4,12 +4,20 @@ namespace Party.DB
 {
     public class AppDbContext: DbContext
     {
+        public AppDbContext()
+        {
 
-        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        }
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options)
+        {
+
+        }
+
+/*        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(
                 @"Server=(localdb)\mssqllocaldb;Database=party;Integrated Security=True");
-        }
+        }*/
         
         public DbSet<Uczestnik> Uczestnik { get; set; }
         public DbSet<Preferencja> Preferencja { get; set; }
@@ -24,6 +32,10 @@ namespace Party.DB
         public DbSet<Skarga> Skarga { get; set; }
         public DbSet<Kometaz> Kometaz { get; set; }
         public DbSet<Ocena> Ocena { get; set; }
+
+        public DbSet<Kategoria> Kategoria { get; set; }
+        public DbSet<WydarzenieKategoria> WydarzenieKategoria { get; set; }
+
 
         
         
@@ -69,6 +81,19 @@ namespace Party.DB
             modelBuilder.Entity<Wydarzenie>()
                 .HasMany(c => c.Oceny)
                 .WithOne(e => e.Wydarzenie);
+
+            //Wydarzenie KAtegoria
+            modelBuilder.Entity<WydarzenieKategoria>()
+                .HasKey(pr => new { pr.IdWydarzenie, pr.IdKategoria });
+            modelBuilder.Entity<WydarzenieKategoria>()
+                .HasOne(bc => bc.IdWydarzenieNavigation)
+                .WithMany(b => b.WydarzenieKategoria)
+                .HasForeignKey(bc => bc.IdWydarzenie);
+            modelBuilder.Entity<WydarzenieKategoria>()
+                .HasOne(bc => bc.IdKategoriaNavigation)
+                .WithMany(c => c.WydarzenieKategoria)
+                .HasForeignKey(bc => bc.IdKategoria);
+
         }
     }
 }
