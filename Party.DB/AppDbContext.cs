@@ -11,9 +11,21 @@ namespace Party.DB
                 @"Server=(localdb)\mssqllocaldb;Database=party;Integrated Security=True");
         }
         
-        public DbSet<Uczestnik> Books { get; set; }
-        public DbSet<Preferencja> Categories { get; set; }
-        public DbSet<PreferencjaUczestnika> BookCategories { get; set; }
+        public DbSet<Uczestnik> Uczestnik { get; set; }
+        public DbSet<Preferencja> Preferencja { get; set; }
+        public DbSet<PreferencjaUczestnika> PreferencjaUczestnika { get; set; }
+        
+        public DbSet<Tworca> Tworca { get; set; }
+
+        public DbSet<Wydarzenie> Wydarzenies { get; set; }
+        public DbSet<Miejsce> Miejsca { get; set; }
+        public DbSet<WydarzenieMiejsce> WydarzenieMiejsce { get; set; }
+        
+        public DbSet<Skarga> Skarga { get; set; }
+        public DbSet<Kometaz> Kometaz { get; set; }
+        public DbSet<Ocena> Ocena { get; set; }
+
+        
         
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
