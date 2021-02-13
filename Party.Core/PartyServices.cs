@@ -20,12 +20,19 @@ namespace Party.Core
             return _context.Wydarzenies.ToList();
         }
 
-        public IEnumerable<Uczestnik> GetUczestnikiWydarzenia(int wydarzenie)
+        public Wydarzenie GetUczestnikiWydarzenia(int wydarzenie)
         {
-            return  _context.UczestnikWydarzenie
+
+            var first = _context.Wydarzenies.Where(w => w.IdWydarzenie == wydarzenie)
+                .Include(uw => uw.UczestnikWydarzenie)
+                .ThenInclude(u => u.Uczestnik)
+                .FirstOrDefault();
+            
+            /*var second =_context.UczestnikWydarzenie
                 .Where(uw => uw.IdWydarzenie == wydarzenie)
-                .Select(s => s.IdUczestnikNavigation)
-                .ToList();
+                .Select(s => s.Uczestnik)
+                .ToList();*/
+            return first;
         }
     }
 }

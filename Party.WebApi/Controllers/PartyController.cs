@@ -3,6 +3,7 @@ using Microsoft.Extensions.Logging;
 using System.Linq;
 using Newtonsoft.Json;
 using Party.Core;
+using Party.DB;
 
 namespace Party.WebApi.Controllers
 {
@@ -28,8 +29,10 @@ namespace Party.WebApi.Controllers
         [HttpGet("{wydarzenieId}",Name = "GetAllUczestnikuwWydarzenia")]
         public IActionResult GetAllUczestnikuwWydarzenia(int wydarzenieId)
         {
-            return Ok(_party.GetUczestnikiWydarzenia(wydarzenieId));
+            var wydarzenie = _party.GetUczestnikiWydarzenia(wydarzenieId);
+            return Ok(wydarzenie);
         }
+
 
     }
 }

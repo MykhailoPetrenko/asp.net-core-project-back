@@ -40,6 +40,8 @@
           <e p="20210213124800_change-typ.Designer.cs" t="Include" />
           <e p="20210213125218_add-key.cs" t="Include" />
           <e p="20210213125218_add-key.Designer.cs" t="Include" />
+          <e p="20210213144639_change_names.cs" t="Include" />
+          <e p="20210213144639_change_names.Designer.cs" t="Include" />
           <e p="AppDbContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="Moderator.cs" t="Include" />

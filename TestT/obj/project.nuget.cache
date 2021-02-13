@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "90KgVgTinMnVjGDcqzKn56dsxU/kvJDn8jzrhtRqaveGmAmu1HM1x/RL1iFjjyMy5JBPLHJWnmltS95XU+DQow==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Mykhailo\\source\\repos\\Party.WebApi\\TestT\\TestT.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Mykhailo\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Mykhailo\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

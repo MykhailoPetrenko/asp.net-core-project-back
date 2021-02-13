@@ -341,13 +341,13 @@ namespace Party.DB.Migrations
 
             modelBuilder.Entity("Party.DB.PreferencjaUczestnika", b =>
                 {
-                    b.HasOne("Party.DB.Preferencja", "IdPreferencjaNavigation")
+                    b.HasOne("Party.DB.Preferencja", "Preferencja")
                         .WithMany("PreferencjaUczestnika")
                         .HasForeignKey("IdPreferencja")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Party.DB.Uczestnik", "IdUczestnikNavigation")
+                    b.HasOne("Party.DB.Uczestnik", "Uczestnik")
                         .WithMany("PreferencjaUczestnika")
                         .HasForeignKey("IdUczestnik")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -363,13 +363,13 @@ namespace Party.DB.Migrations
 
             modelBuilder.Entity("Party.DB.UczestnikWydarzenie", b =>
                 {
-                    b.HasOne("Party.DB.Uczestnik", "IdUczestnikNavigation")
+                    b.HasOne("Party.DB.Uczestnik", "Uczestnik")
                         .WithMany("UczestnikWydarzenie")
                         .HasForeignKey("IdUczestnik")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Party.DB.Wydarzenie", "IdWydarzenieNavigation")
+                    b.HasOne("Party.DB.Wydarzenie", "Wydarzenie")
                         .WithMany("UczestnikWydarzenie")
                         .HasForeignKey("IdWydarzenie")
                         .OnDelete(DeleteBehavior.Cascade)

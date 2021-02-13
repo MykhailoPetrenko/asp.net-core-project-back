@@ -9,8 +9,8 @@ namespace Party.DB
         public int IdUczestnik { get; set; }
         public int IdWydarzenie { get; set; }
         
-        public Uczestnik IdUczestnikNavigation { get; set; }
-        public Wydarzenie IdWydarzenieNavigation { get; set; }
+        public Uczestnik Uczestnik { get; set; }
+        public Wydarzenie Wydarzenie { get; set; }
 
     }
 }

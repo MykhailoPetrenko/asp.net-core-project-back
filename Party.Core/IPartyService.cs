@@ -8,6 +8,6 @@ namespace Party.Core
     public interface IPartyService
     {
         IEnumerable<Wydarzenie> GetWydarzenia();
-        IEnumerable<Uczestnik> GetUczestnikiWydarzenia(int wydarzenie);
+        Wydarzenie GetUczestnikiWydarzenia(int wydarzenie);
     }
 }

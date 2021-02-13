@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Party.WebApi", "Party.WebAp
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Party.DB", "Party.DB\Party.DB.csproj", "{A00FDFFC-9BFF-4B22-AFC6-81B8F17E5DE4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Party.Core", "Party.Core\Party.Core.csproj", "{94B941CC-671E-40D8-9936-A818B260D939}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Party.Core", "Party.Core\Party.Core.csproj", "{94B941CC-671E-40D8-9936-A818B260D939}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -47,11 +47,11 @@ namespace Party.DB
             modelBuilder.Entity<PreferencjaUczestnika>()
                 .HasKey(pr => new { pr.IdPreferencja,pr.IdUczestnik });  
             modelBuilder.Entity<PreferencjaUczestnika>()
-                .HasOne(bc => bc.IdPreferencjaNavigation)
+                .HasOne(bc => bc.Preferencja)
                 .WithMany(b => b.PreferencjaUczestnika)
                 .HasForeignKey(bc => bc.IdPreferencja);  
             modelBuilder.Entity<PreferencjaUczestnika>()
-                .HasOne(bc => bc.IdUczestnikNavigation)
+                .HasOne(bc => bc.Uczestnik)
                 .WithMany(c => c.PreferencjaUczestnika)
                 .HasForeignKey(bc => bc.IdUczestnik);
             //Tworca -> Wydarzenie
@@ -99,11 +99,11 @@ namespace Party.DB
             modelBuilder.Entity<UczestnikWydarzenie>()
                 .HasKey(pr => new { pr.IdWydarzenie, pr.IdUczestnik });
             modelBuilder.Entity<UczestnikWydarzenie>()
-                .HasOne(bc => bc.IdWydarzenieNavigation)
+                .HasOne(bc => bc.Wydarzenie)
                 .WithMany(b => b.UczestnikWydarzenie)
                 .HasForeignKey(bc => bc.IdWydarzenie);
             modelBuilder.Entity<UczestnikWydarzenie>()
-                .HasOne(bc => bc.IdUczestnikNavigation)
+                .HasOne(bc => bc.Uczestnik)
                 .WithMany(c => c.UczestnikWydarzenie)
                 .HasForeignKey(bc => bc.IdUczestnik);
 
