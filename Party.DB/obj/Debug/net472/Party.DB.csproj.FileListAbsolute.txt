@@ -46,7 +46,6 @@ C:\Users\Mykhailo\source\repos\Party.WebApi\Party.DB\bin\Debug\net472\pt-BR\Micr
 C:\Users\Mykhailo\source\repos\Party.WebApi\Party.DB\bin\Debug\net472\ru\Microsoft.Data.SqlClient.resources.dll
 C:\Users\Mykhailo\source\repos\Party.WebApi\Party.DB\bin\Debug\net472\zh-Hans\Microsoft.Data.SqlClient.resources.dll
 C:\Users\Mykhailo\source\repos\Party.WebApi\Party.DB\bin\Debug\net472\zh-Hant\Microsoft.Data.SqlClient.resources.dll
-C:\Users\Mykhailo\source\repos\Party.WebApi\Party.DB\obj\Debug\net472\Party.DB.csprojAssemblyReference.cache
 C:\Users\Mykhailo\source\repos\Party.WebApi\Party.DB\obj\Debug\net472\Party.DB.dll.config
 C:\Users\Mykhailo\source\repos\Party.WebApi\Party.DB\obj\Debug\net472\Party.DB.AssemblyInfoInputs.cache
 C:\Users\Mykhailo\source\repos\Party.WebApi\Party.DB\obj\Debug\net472\Party.DB.AssemblyInfo.cs
@@ -54,3 +53,4 @@ C:\Users\Mykhailo\source\repos\Party.WebApi\Party.DB\obj\Debug\net472\Party.DB.c
 C:\Users\Mykhailo\source\repos\Party.WebApi\Party.DB\obj\Debug\net472\Party.DB.csproj.CopyComplete
 C:\Users\Mykhailo\source\repos\Party.WebApi\Party.DB\obj\Debug\net472\Party.DB.dll
 C:\Users\Mykhailo\source\repos\Party.WebApi\Party.DB\obj\Debug\net472\Party.DB.pdb
+C:\Users\Mykhailo\source\repos\Party.WebApi\Party.DB\obj\Debug\net472\Party.DB.csprojAssemblyReference.cache

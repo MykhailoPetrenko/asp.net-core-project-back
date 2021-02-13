@@ -7,7 +7,7 @@ namespace Party.DB
     {
         [Key]
         public int IdKategoria{ get; set; }
-        public int Nazwa{ get; set; }
+        public string Nazwa{ get; set; }
 
         public ICollection<WydarzenieKategoria> WydarzenieKategoria { get; set; }
     }

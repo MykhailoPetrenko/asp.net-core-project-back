@@ -19,11 +19,16 @@ namespace Party.WebApi.Controllers
         }
 
         [HttpGet]
-        public IActionResult Get()
+        public IActionResult GetAllWydarzenia()
         {
             string userId = ((System.Security.Claims.ClaimsIdentity)User.Identity).Claims.ToList()[3].Value;
            
             return Ok(_party.GetWydarzenia());
+        }
+        [HttpGet("{wydarzenieId}",Name = "GetAllUczestnikuwWydarzenia")]
+        public IActionResult GetAllUczestnikuwWydarzenia(int wydarzenieId)
+        {
+            return Ok(_party.GetUczestnikiWydarzenia(wydarzenieId));
         }
 
     }

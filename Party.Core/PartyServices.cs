@@ -22,17 +22,10 @@ namespace Party.Core
 
         public IEnumerable<Uczestnik> GetUczestnikiWydarzenia(int wydarzenie)
         {
-            var tttt = _context.Uczestnik
-                .Include(w => w.UczestnikWydarzenie)
-                .ThenInclude(wc => wc.IdUczestnikNavigation)
-                .ToList();
-
-            var ttt = _context.UczestnikWydarzenie
+            return  _context.UczestnikWydarzenie
                 .Where(uw => uw.IdWydarzenie == wydarzenie)
                 .Select(s => s.IdUczestnikNavigation)
                 .ToList();
-            
-            return ttt;
         }
     }
 }

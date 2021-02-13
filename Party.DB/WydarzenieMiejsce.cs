@@ -1,7 +1,10 @@
-﻿namespace Party.DB
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace Party.DB
 {
     public class WydarzenieMiejsce
     {
+        [Key]
         public int IdWydarzenieMiejsce { get; set; }
         public int IdWydarzenie { get; set; }
         public int IdMiejsce { get; set; }

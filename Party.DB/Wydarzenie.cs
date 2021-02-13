@@ -13,7 +13,7 @@ namespace Party.DB
         public DateTime DataPrzeprowadzenia { get; set; }
         [Required]
         public WecieczkaType Typ { get; set; }
-        public string Opis { get; set; } = string.Empty;
+        public string Opis { get; set; }
         public List<Kategoria> Kategoria { get; set; } = new List<Kategoria>();
 
         public Tworca Tworca { get; set; }

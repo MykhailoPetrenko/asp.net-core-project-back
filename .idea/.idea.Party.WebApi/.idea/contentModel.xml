@@ -32,6 +32,14 @@
           <e p="20210213112104_uczestnikwydarzenie.Designer.cs" t="Include" />
           <e p="20210213115255_uczestnikwydarzeniedbset.cs" t="Include" />
           <e p="20210213115255_uczestnikwydarzeniedbset.Designer.cs" t="Include" />
+          <e p="20210213120816_addextend.cs" t="Include" />
+          <e p="20210213120816_addextend.Designer.cs" t="Include" />
+          <e p="20210213123847_change-type.cs" t="Include" />
+          <e p="20210213123847_change-type.Designer.cs" t="Include" />
+          <e p="20210213124800_change-typ.cs" t="Include" />
+          <e p="20210213124800_change-typ.Designer.cs" t="Include" />
+          <e p="20210213125218_add-key.cs" t="Include" />
+          <e p="20210213125218_add-key.Designer.cs" t="Include" />
           <e p="AppDbContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="Moderator.cs" t="Include" />
