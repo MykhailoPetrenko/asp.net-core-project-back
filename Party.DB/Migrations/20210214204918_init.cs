@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace Party.DB.Migrations
 {
-    public partial class initial : Migration
+    public partial class init : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -26,27 +26,33 @@ namespace Party.DB.Migrations
                 name: "Tworca",
                 columns: table => new
                 {
-                    IdTworca = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    IdOsoba = table.Column<string>(nullable: false),
+                    Imie = table.Column<string>(nullable: false),
+                    Nazwisko = table.Column<string>(nullable: false),
+                    Email = table.Column<string>(nullable: false),
+                    Wiek = table.Column<int>(nullable: false),
                     NrKonta = table.Column<string>(nullable: false),
                     StanKonta = table.Column<double>(nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Tworca", x => x.IdTworca);
+                    table.PrimaryKey("PK_Tworca", x => x.IdOsoba);
                 });
 
             migrationBuilder.CreateTable(
                 name: "Uczestnik",
                 columns: table => new
                 {
-                    IdUczestnik = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    IdOsoba = table.Column<string>(nullable: false),
+                    Imie = table.Column<string>(nullable: false),
+                    Nazwisko = table.Column<string>(nullable: false),
+                    Email = table.Column<string>(nullable: false),
+                    Wiek = table.Column<int>(nullable: false),
                     Status = table.Column<string>(nullable: false)
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Uczestnik", x => x.IdUczestnik);
+                    table.PrimaryKey("PK_Uczestnik", x => x.IdOsoba);
                 });
 
             migrationBuilder.CreateTable(
@@ -58,16 +64,16 @@ namespace Party.DB.Migrations
                     DataPrzeprowadzenia = table.Column<DateTime>(nullable: false),
                     Typ = table.Column<int>(nullable: false),
                     Opis = table.Column<string>(nullable: true),
-                    TworcaIdTworca = table.Column<int>(nullable: true)
+                    TworcaIdOsoba = table.Column<string>(nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Wydarzenies", x => x.IdWydarzenie);
                     table.ForeignKey(
-                        name: "FK_Wydarzenies_Tworca_TworcaIdTworca",
-                        column: x => x.TworcaIdTworca,
+                        name: "FK_Wydarzenies_Tworca_TworcaIdOsoba",
+                        column: x => x.TworcaIdOsoba,
                         principalTable: "Tworca",
-                        principalColumn: "IdTworca",
+                        principalColumn: "IdOsoba",
                         onDelete: ReferentialAction.Restrict);
                 });
 
@@ -77,7 +83,7 @@ namespace Party.DB.Migrations
                 {
                     IdKategoria = table.Column<int>(nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
-                    Nazwa = table.Column<int>(nullable: false),
+                    Nazwa = table.Column<string>(nullable: true),
                     WydarzenieIdWydarzenie = table.Column<int>(nullable: true)
                 },
                 constraints: table =>
@@ -149,6 +155,31 @@ namespace Party.DB.Migrations
                         principalTable: "Wydarzenies",
                         principalColumn: "IdWydarzenie",
                         onDelete: ReferentialAction.Restrict);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "UczestnikWydarzenie",
+                columns: table => new
+                {
+                    IdUczestnik = table.Column<string>(nullable: false),
+                    IdWydarzenie = table.Column<int>(nullable: false),
+                    IdUczestnikWydarzenie = table.Column<int>(nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_UczestnikWydarzenie", x => new { x.IdWydarzenie, x.IdUczestnik });
+                    table.ForeignKey(
+                        name: "FK_UczestnikWydarzenie_Uczestnik_IdUczestnik",
+                        column: x => x.IdUczestnik,
+                        principalTable: "Uczestnik",
+                        principalColumn: "IdOsoba",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_UczestnikWydarzenie_Wydarzenies_IdWydarzenie",
+                        column: x => x.IdWydarzenie,
+                        principalTable: "Wydarzenies",
+                        principalColumn: "IdWydarzenie",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -225,7 +256,7 @@ namespace Party.DB.Migrations
                 name: "PreferencjaUczestnika",
                 columns: table => new
                 {
-                    IdUczestnik = table.Column<int>(nullable: false),
+                    IdUczestnik = table.Column<string>(nullable: false),
                     IdPreferencja = table.Column<int>(nullable: false),
                     IdPreferencjaUczestnika = table.Column<int>(nullable: false)
                 },
@@ -242,7 +273,7 @@ namespace Party.DB.Migrations
                         name: "FK_PreferencjaUczestnika_Uczestnik_IdUczestnik",
                         column: x => x.IdUczestnik,
                         principalTable: "Uczestnik",
-                        principalColumn: "IdUczestnik",
+                        principalColumn: "IdOsoba",
                         onDelete: ReferentialAction.Cascade);
                 });
 
@@ -277,6 +308,11 @@ namespace Party.DB.Migrations
                 column: "WydarzenieIdWydarzenie");
 
             migrationBuilder.CreateIndex(
+                name: "IX_UczestnikWydarzenie_IdUczestnik",
+                table: "UczestnikWydarzenie",
+                column: "IdUczestnik");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_WydarzenieKategoria_IdKategoria",
                 table: "WydarzenieKategoria",
                 column: "IdKategoria");
@@ -287,9 +323,9 @@ namespace Party.DB.Migrations
                 column: "IdMiejsce");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Wydarzenies_TworcaIdTworca",
+                name: "IX_Wydarzenies_TworcaIdOsoba",
                 table: "Wydarzenies",
-                column: "TworcaIdTworca");
+                column: "TworcaIdOsoba");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)
@@ -305,6 +341,9 @@ namespace Party.DB.Migrations
 
             migrationBuilder.DropTable(
                 name: "Skarga");
+
+            migrationBuilder.DropTable(
+                name: "UczestnikWydarzenie");
 
             migrationBuilder.DropTable(
                 name: "WydarzenieKategoria");

@@ -10,8 +10,8 @@ using Party.DB;
 namespace Party.DB.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20210213123847_change-type")]
-    partial class changetype
+    [Migration("20210214204918_init")]
+    partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -132,8 +132,8 @@ namespace Party.DB.Migrations
                     b.Property<int>("IdPreferencja")
                         .HasColumnType("int");
 
-                    b.Property<int>("IdUczestnik")
-                        .HasColumnType("int");
+                    b.Property<string>("IdUczestnik")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<int>("IdPreferencjaUczestnika")
                         .HasColumnType("int");
@@ -168,10 +168,8 @@ namespace Party.DB.Migrations
 
             modelBuilder.Entity("Party.DB.Tworca", b =>
                 {
-                    b.Property<int>("IdOsoba")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                    b.Property<string>("IdOsoba")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -202,10 +200,8 @@ namespace Party.DB.Migrations
 
             modelBuilder.Entity("Party.DB.Uczestnik", b =>
                 {
-                    b.Property<int>("IdOsoba")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                    b.Property<string>("IdOsoba")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -236,8 +232,8 @@ namespace Party.DB.Migrations
                     b.Property<int>("IdWydarzenie")
                         .HasColumnType("int");
 
-                    b.Property<int>("IdUczestnik")
-                        .HasColumnType("int");
+                    b.Property<string>("IdUczestnik")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<int>("IdUczestnikWydarzenie")
                         .HasColumnType("int");
@@ -262,8 +258,8 @@ namespace Party.DB.Migrations
                     b.Property<string>("Opis")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("TworcaIdOsoba")
-                        .HasColumnType("int");
+                    b.Property<string>("TworcaIdOsoba")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<int>("Typ")
                         .HasColumnType("int");
@@ -343,13 +339,13 @@ namespace Party.DB.Migrations
 
             modelBuilder.Entity("Party.DB.PreferencjaUczestnika", b =>
                 {
-                    b.HasOne("Party.DB.Preferencja", "IdPreferencjaNavigation")
+                    b.HasOne("Party.DB.Preferencja", "Preferencja")
                         .WithMany("PreferencjaUczestnika")
                         .HasForeignKey("IdPreferencja")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Party.DB.Uczestnik", "IdUczestnikNavigation")
+                    b.HasOne("Party.DB.Uczestnik", "Uczestnik")
                         .WithMany("PreferencjaUczestnika")
                         .HasForeignKey("IdUczestnik")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -365,13 +361,13 @@ namespace Party.DB.Migrations
 
             modelBuilder.Entity("Party.DB.UczestnikWydarzenie", b =>
                 {
-                    b.HasOne("Party.DB.Uczestnik", "IdUczestnikNavigation")
+                    b.HasOne("Party.DB.Uczestnik", "Uczestnik")
                         .WithMany("UczestnikWydarzenie")
                         .HasForeignKey("IdUczestnik")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Party.DB.Wydarzenie", "IdWydarzenieNavigation")
+                    b.HasOne("Party.DB.Wydarzenie", "Wydarzenie")
                         .WithMany("UczestnikWydarzenie")
                         .HasForeignKey("IdWydarzenie")
                         .OnDelete(DeleteBehavior.Cascade)

@@ -1828,7 +1828,10 @@
         },
         "runtime": {
           "bin/placeholder/Party.Core.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "Party.DB/1.0.0": {
         "type": "project",
@@ -1843,7 +1846,10 @@
         },
         "runtime": {
           "bin/placeholder/Party.DB.dll": {}
-        }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },

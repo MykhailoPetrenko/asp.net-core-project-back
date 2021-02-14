@@ -24,7 +24,7 @@ namespace Party.WebApi.Controllers
         public IActionResult GetAllWydarzenia()
         {
             string userId = ((System.Security.Claims.ClaimsIdentity)User.Identity).Claims.ToList()[3].Value;
-           
+
             return Ok(_party.GetWydarzenia());
         }
         [HttpGet("{wydarzenieId}",Name = "GetAllUczestnikuwWydarzenia")]
@@ -32,10 +32,18 @@ namespace Party.WebApi.Controllers
         {
             return Ok( _party.GetUczestnikiWydarzenia(wydarzenieId));
         }
-        [HttpGet("{date}",Name = "GetWydarzeniaByDate")]
-        public IActionResult GetWydarzeniaByDate(DateTime date)
+        /* [Route("date/{date?}")]
+         [HttpGet("{date}", Name = "GetWydarzeniaByDate")]
+         public IActionResult GetWydarzeniaByDate(DateTime date)
+         {
+             return Ok(_party.GetWydarzeniaByDate(date));
+         }*/
+        [HttpPost(Name = "GetWydarzeniaByDate")]
+        public IActionResult CreateWydarzenie(Wydarzenie wydarzenie)
         {
-            return Ok( _party.GetWydarzeniaByDate(date));
+            string userId = ((System.Security.Claims.ClaimsIdentity)User.Identity).Claims.ToList()[3].Value;
+
+            return Ok(_party.CreateWydarzenie(wydarzenie, userId));
         }
 
 

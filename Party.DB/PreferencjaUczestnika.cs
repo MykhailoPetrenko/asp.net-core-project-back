@@ -7,7 +7,7 @@ namespace Party.DB
     {
         [Key]
         public int IdPreferencjaUczestnika { get; set; }
-        public int IdUczestnik { get; set; }
+        public string IdUczestnik { get; set; }
         public int IdPreferencja { get; set; }
         
         public Uczestnik Uczestnik { get; set; }

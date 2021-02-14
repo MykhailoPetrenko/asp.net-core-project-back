@@ -8,6 +8,7 @@
       <e p="Party.Core" t="IncludeRecursive">
         <e p="bin" t="ExcludeRecursive" />
         <e p="IPartyService.cs" t="Include" />
+        <e p="IUserServises.cs" t="Include" />
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
             <e p="netcoreapp3.1" t="Include">
@@ -17,6 +18,7 @@
         </e>
         <e p="Party.Core.csproj" t="IncludeRecursive" />
         <e p="PartyServices.cs" t="Include" />
+        <e p="UserServices.cs" t="Include" />
       </e>
       <e p="Party.DB" t="IncludeRecursive">
         <e p="AppDbContext.cs" t="Include" />
@@ -26,22 +28,8 @@
         <e p="Kometaz.cs" t="Include" />
         <e p="Miejsce.cs" t="Include" />
         <e p="Migrations" t="Include">
-          <e p="20210213084217_initial.cs" t="Include" />
-          <e p="20210213084217_initial.Designer.cs" t="Include" />
-          <e p="20210213112104_uczestnikwydarzenie.cs" t="Include" />
-          <e p="20210213112104_uczestnikwydarzenie.Designer.cs" t="Include" />
-          <e p="20210213115255_uczestnikwydarzeniedbset.cs" t="Include" />
-          <e p="20210213115255_uczestnikwydarzeniedbset.Designer.cs" t="Include" />
-          <e p="20210213120816_addextend.cs" t="Include" />
-          <e p="20210213120816_addextend.Designer.cs" t="Include" />
-          <e p="20210213123847_change-type.cs" t="Include" />
-          <e p="20210213123847_change-type.Designer.cs" t="Include" />
-          <e p="20210213124800_change-typ.cs" t="Include" />
-          <e p="20210213124800_change-typ.Designer.cs" t="Include" />
-          <e p="20210213125218_add-key.cs" t="Include" />
-          <e p="20210213125218_add-key.Designer.cs" t="Include" />
-          <e p="20210213144639_change_names.cs" t="Include" />
-          <e p="20210213144639_change_names.Designer.cs" t="Include" />
+          <e p="20210214204918_init.cs" t="Include" />
+          <e p="20210214204918_init.Designer.cs" t="Include" />
           <e p="AppDbContextModelSnapshot.cs" t="Include" />
         </e>
         <e p="Moderator.cs" t="Include" />
@@ -79,6 +67,7 @@
         <e p="Controllers" t="Include">
           <e p="BaseController.cs" t="Include" />
           <e p="PartyController.cs" t="Include" />
+          <e p="UserController.cs" t="Include" />
         </e>
         <e p="Filters" t="Include">
           <e p="JwtAuthHandler.cs" t="Include" />

@@ -31,47 +31,67 @@
       <change beforePath="$PROJECT_DIR$/.vs/Party.WebApi/DesignTimeBuild/.dtbcache.v2" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Party.WebApi/DesignTimeBuild/.dtbcache.v2" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.vs/Party.WebApi/v16/.suo" beforeDir="false" afterPath="$PROJECT_DIR$/.vs/Party.WebApi/v16/.suo" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Party.Core/IPartyService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Party.Core/IPartyService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Party.Core/Party.Core.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Party.Core/Party.Core.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Party.Core/PartyServices.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Party.Core/PartyServices.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Party.Core/obj/Debug/netstandard2.0/Party.Core.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Party.Core/obj/Debug/netstandard2.0/Party.Core.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Party.Core/bin/Debug/netcoreapp3.1/Party.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Party.Core/bin/Debug/netcoreapp3.1/Party.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Party.Core/bin/Debug/netcoreapp3.1/Party.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Party.Core/bin/Debug/netcoreapp3.1/Party.Core.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Party.Core/bin/Debug/netcoreapp3.1/Party.DB.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Party.Core/bin/Debug/netcoreapp3.1/Party.DB.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Party.Core/bin/Debug/netcoreapp3.1/Party.DB.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Party.Core/bin/Debug/netcoreapp3.1/Party.DB.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Party.Core/obj/Debug/netcoreapp3.1/Party.Core.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Party.Core/obj/Debug/netcoreapp3.1/Party.Core.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Party.Core/obj/Debug/netcoreapp3.1/Party.Core.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Party.Core/obj/Debug/netcoreapp3.1/Party.Core.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Party.Core/obj/Debug/netcoreapp3.1/Party.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Party.Core/obj/Debug/netcoreapp3.1/Party.Core.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Party.Core/obj/Debug/netcoreapp3.1/Party.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Party.Core/obj/Debug/netcoreapp3.1/Party.Core.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Party.Core/obj/Party.Core.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Party.Core/obj/Party.Core.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Party.Core/obj/Party.Core.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Party.Core/obj/Party.Core.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Party.Core/obj/Party.Core.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/Party.Core/obj/Party.Core.csproj.nuget.g.targets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Party.Core/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Party.Core/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Party.Core/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Party.Core/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Party.Core/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Party.Core/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Party.Core/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Party.Core/obj/rider.project.restore.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Party.DB/Party.DB.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Party.DB/Party.DB.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Party.DB/obj/Debug/net472/Party.DB.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Party.DB/obj/Debug/net472/Party.DB.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Party.DB/AppDbContext.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Party.DB/AppDbContext.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Party.DB/Migrations/20210213084217_initial.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Party.DB/Migrations/20210213084217_initial.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Party.DB/Migrations/20210213112104_uczestnikwydarzenie.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Party.DB/Migrations/20210213112104_uczestnikwydarzenie.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Party.DB/Migrations/20210213115255_uczestnikwydarzeniedbset.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Party.DB/Migrations/20210213115255_uczestnikwydarzeniedbset.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Party.DB/Migrations/20210213120816_addextend.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Party.DB/Migrations/20210213120816_addextend.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Party.DB/Migrations/20210213123847_change-type.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Party.DB/Migrations/20210213123847_change-type.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Party.DB/Migrations/20210213124800_change-typ.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Party.DB/Migrations/20210213124800_change-typ.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Party.DB/Migrations/20210213125218_add-key.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Party.DB/Migrations/20210213125218_add-key.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Party.DB/Migrations/20210213144639_change_names.Designer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Party.DB/Migrations/20210213144639_change_names.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Party.DB/Migrations/AppDbContextModelSnapshot.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Party.DB/Migrations/AppDbContextModelSnapshot.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Party.DB/Osoba.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Party.DB/Osoba.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Party.DB/PreferencjaUczestnika.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Party.DB/PreferencjaUczestnika.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Party.DB/UczestnikWydarzenie.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Party.DB/UczestnikWydarzenie.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Party.DB/bin/Debug/netcoreapp3.1/Party.DB.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Party.DB/bin/Debug/netcoreapp3.1/Party.DB.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Party.DB/bin/Debug/netcoreapp3.1/Party.DB.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Party.DB/bin/Debug/netcoreapp3.1/Party.DB.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Party.DB/obj/Debug/netcoreapp3.1/Party.DB.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Party.DB/obj/Debug/netcoreapp3.1/Party.DB.csproj.CoreCompileInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Party.DB/obj/Debug/netcoreapp3.1/Party.DB.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Party.DB/obj/Debug/netcoreapp3.1/Party.DB.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Party.DB/obj/Debug/netcoreapp3.1/Party.DB.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Party.DB/obj/Debug/netcoreapp3.1/Party.DB.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Party.DB/obj/Debug/netcoreapp3.1/Party.DB.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Party.DB/obj/Debug/netcoreapp3.1/Party.DB.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Party.DB/obj/Party.DB.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Party.DB/obj/Party.DB.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Party.DB/obj/Party.DB.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Party.DB/obj/Party.DB.csproj.nuget.g.props" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Party.DB/obj/Party.DB.csproj.nuget.g.targets" beforeDir="false" afterPath="$PROJECT_DIR$/Party.DB/obj/Party.DB.csproj.nuget.g.targets" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Party.DB/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Party.DB/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Party.DB/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Party.DB/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Party.DB/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Party.DB/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Party.DB/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Party.DB/obj/rider.project.restore.info" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Party.WebApi/Controllers/PartyController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Party.WebApi/Controllers/PartyController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Party.WebApi/Party.WebApi.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Party.WebApi/Party.WebApi.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Party.WebApi/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Party.WebApi/Startup.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Party.WebApi/bin/Debug/netcoreapp3.1/Party.Core.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Party.WebApi/bin/Debug/netcoreapp3.1/Party.Core.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Party.WebApi/bin/Debug/netcoreapp3.1/Party.Core.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Party.WebApi/bin/Debug/netcoreapp3.1/Party.Core.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Party.WebApi/bin/Debug/netcoreapp3.1/Party.DB.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Party.WebApi/bin/Debug/netcoreapp3.1/Party.DB.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Party.WebApi/bin/Debug/netcoreapp3.1/Party.DB.dll.config" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Party.WebApi/bin/Debug/netcoreapp3.1/Party.DB.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Party.WebApi/bin/Debug/netcoreapp3.1/Party.DB.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Party.WebApi/bin/Debug/netcoreapp3.1/Party.WebApi.deps.json" beforeDir="false" afterPath="$PROJECT_DIR$/Party.WebApi/bin/Debug/netcoreapp3.1/Party.WebApi.deps.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Party.WebApi/bin/Debug/netcoreapp3.1/Party.WebApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Party.WebApi/bin/Debug/netcoreapp3.1/Party.WebApi.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Party.WebApi/bin/Debug/netcoreapp3.1/Party.WebApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Party.WebApi/bin/Debug/netcoreapp3.1/Party.WebApi.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Party.WebApi/obj/Debug/netcoreapp3.1/Party.WebApi.assets.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Party.WebApi/obj/Debug/netcoreapp3.1/Party.WebApi.assets.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Party.WebApi/obj/Debug/netcoreapp3.1/Party.WebApi.csproj.CoreCompileInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Party.WebApi/obj/Debug/netcoreapp3.1/Party.WebApi.csproj.CoreCompileInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Party.WebApi/obj/Debug/netcoreapp3.1/Party.WebApi.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Party.WebApi/obj/Debug/netcoreapp3.1/Party.WebApi.csproj.FileListAbsolute.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Party.WebApi/obj/Debug/netcoreapp3.1/Party.WebApi.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Party.WebApi/obj/Debug/netcoreapp3.1/Party.WebApi.csprojAssemblyReference.cache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Party.WebApi/obj/Debug/netcoreapp3.1/Party.WebApi.dll" beforeDir="false" afterPath="$PROJECT_DIR$/Party.WebApi/obj/Debug/netcoreapp3.1/Party.WebApi.dll" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Party.WebApi/obj/Debug/netcoreapp3.1/Party.WebApi.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/Party.WebApi/obj/Debug/netcoreapp3.1/Party.WebApi.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Party.WebApi/obj/Party.WebApi.csproj.nuget.dgspec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Party.WebApi/obj/Party.WebApi.csproj.nuget.dgspec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Party.WebApi/obj/Party.WebApi.csproj.nuget.g.props" beforeDir="false" afterPath="$PROJECT_DIR$/Party.WebApi/obj/Party.WebApi.csproj.nuget.g.props" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Party.WebApi/obj/project.assets.json" beforeDir="false" afterPath="$PROJECT_DIR$/Party.WebApi/obj/project.assets.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Party.WebApi/obj/project.nuget.cache" beforeDir="false" afterPath="$PROJECT_DIR$/Party.WebApi/obj/project.nuget.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Party.WebApi/obj/project.packagespec.json" beforeDir="false" afterPath="$PROJECT_DIR$/Party.WebApi/obj/project.packagespec.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Party.WebApi/obj/rider.project.restore.info" beforeDir="false" afterPath="$PROJECT_DIR$/Party.WebApi/obj/rider.project.restore.info" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,6 +105,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/D980264F-C2B2-4E75-803E-4FA17A214747/3/AuthorizationMiddleware.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/A81C4DA1-62C3-4E23-B9E2-DD58FD753244/F3/ActionMethodExecutor.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/CFC53072-CDD1-45A4-BA7A-F31BDE1FA492/168/Future.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/A81C4DA1-62C3-4E23-B9E2-DD58FD753244/FE/ControllerActionInvoker.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
@@ -112,17 +133,20 @@
         <option value="$PROJECT_DIR$/Party.DB/Skarga.cs" />
         <option value="$PROJECT_DIR$/Party.DB/Kometaz.cs" />
         <option value="$PROJECT_DIR$/Party.DB/Ocena.cs" />
-        <option value="$PROJECT_DIR$/Party.Core/UserServices.cs" />
         <option value="$PROJECT_DIR$/Party.WebApi/Services/UserServices.cs" />
         <option value="$PROJECT_DIR$/Party.DB/UczestnikWycieczka.cs" />
         <option value="$PROJECT_DIR$/Party.DB/Tworca.cs" />
         <option value="$PROJECT_DIR$/Party.DB/UczestnikWydarzenie.cs" />
         <option value="$PROJECT_DIR$/Party.DB/PreferencjaUczestnika.cs" />
-        <option value="$PROJECT_DIR$/Party.DB/AppDbContext.cs" />
         <option value="$PROJECT_DIR$/Party.DB/Wydarzenie.cs" />
         <option value="$PROJECT_DIR$/Party.DB/Uczestnik.cs" />
-        <option value="$PROJECT_DIR$/Party.WebApi/Startup.cs" />
+        <option value="$PROJECT_DIR$/Party.Core/UserServises.cs" />
         <option value="$PROJECT_DIR$/Party.Core/IPartyService.cs" />
+        <option value="$PROJECT_DIR$/Party.WebApi/Startup.cs" />
+        <option value="$PROJECT_DIR$/Party.Core/IUserServises.cs" />
+        <option value="$PROJECT_DIR$/Party.Core/UserServices.cs" />
+        <option value="$PROJECT_DIR$/Party.DB/AppDbContext.cs" />
+        <option value="$PROJECT_DIR$/Party.WebApi/Controllers/UserController.cs" />
         <option value="$PROJECT_DIR$/Party.WebApi/Controllers/PartyController.cs" />
         <option value="$PROJECT_DIR$/Party.Core/PartyServices.cs" />
       </list>
@@ -192,6 +216,8 @@
       <workItem from="1613213770007" duration="10585000" />
       <workItem from="1613241896551" duration="7384000" />
       <workItem from="1613253091669" duration="2917000" />
+      <workItem from="1613257133795" duration="37000" />
+      <workItem from="1613337158227" duration="7236000" />
     </task>
     <servers />
   </component>
@@ -220,111 +246,111 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="96" y="0" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613084996117" />
-    <state width="414" height="304" key="DebuggerActiveHint" timestamp="1613252173283">
+    <state width="481" height="304" key="DebuggerActiveHint" timestamp="1613344304458">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="364" height="464" key="DebuggerActiveHint/0.0.1280.680/-1920.-457.1920.1040@-1920.-457.1920.1040" timestamp="1613221843136" />
-    <state width="414" height="304" key="DebuggerActiveHint/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613252173283" />
-    <state width="1237" height="139" key="GridCell.Tab.0.bottom" timestamp="1613257037258">
+    <state width="481" height="304" key="DebuggerActiveHint/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613344304458" />
+    <state width="1237" height="298" key="GridCell.Tab.0.bottom" timestamp="1613344277335">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1877" height="164" key="GridCell.Tab.0.bottom/0.0.1280.680/-1920.-457.1920.1040@-1920.-457.1920.1040" timestamp="1613224185533" />
-    <state width="1237" height="139" key="GridCell.Tab.0.bottom/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613257037258" />
-    <state width="1237" height="139" key="GridCell.Tab.0.center" timestamp="1613257037257">
+    <state width="1237" height="298" key="GridCell.Tab.0.bottom/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613344277335" />
+    <state width="1237" height="298" key="GridCell.Tab.0.center" timestamp="1613344277335">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1877" height="164" key="GridCell.Tab.0.center/0.0.1280.680/-1920.-457.1920.1040@-1920.-457.1920.1040" timestamp="1613224185533" />
-    <state width="1237" height="139" key="GridCell.Tab.0.center/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613257037257" />
-    <state width="1237" height="139" key="GridCell.Tab.0.left" timestamp="1613257037257">
+    <state width="1237" height="298" key="GridCell.Tab.0.center/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613344277335" />
+    <state width="1237" height="298" key="GridCell.Tab.0.left" timestamp="1613344277335">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1877" height="164" key="GridCell.Tab.0.left/0.0.1280.680/-1920.-457.1920.1040@-1920.-457.1920.1040" timestamp="1613224185533" />
-    <state width="1237" height="139" key="GridCell.Tab.0.left/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613257037257" />
-    <state width="1237" height="139" key="GridCell.Tab.0.right" timestamp="1613257037257">
+    <state width="1237" height="298" key="GridCell.Tab.0.left/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613344277335" />
+    <state width="1237" height="298" key="GridCell.Tab.0.right" timestamp="1613344277335">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1877" height="164" key="GridCell.Tab.0.right/0.0.1280.680/-1920.-457.1920.1040@-1920.-457.1920.1040" timestamp="1613224185533" />
-    <state width="1237" height="139" key="GridCell.Tab.0.right/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613257037257" />
-    <state width="1237" height="139" key="GridCell.Tab.1.bottom" timestamp="1613257037258">
+    <state width="1237" height="298" key="GridCell.Tab.0.right/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613344277335" />
+    <state width="1237" height="298" key="GridCell.Tab.1.bottom" timestamp="1613344293466">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1877" height="164" key="GridCell.Tab.1.bottom/0.0.1280.680/-1920.-457.1920.1040@-1920.-457.1920.1040" timestamp="1613224185533" />
-    <state width="1237" height="139" key="GridCell.Tab.1.bottom/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613257037258" />
-    <state width="1237" height="139" key="GridCell.Tab.1.center" timestamp="1613257037258">
+    <state width="1237" height="298" key="GridCell.Tab.1.bottom/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613344293466" />
+    <state width="1237" height="298" key="GridCell.Tab.1.center" timestamp="1613344293466">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1877" height="164" key="GridCell.Tab.1.center/0.0.1280.680/-1920.-457.1920.1040@-1920.-457.1920.1040" timestamp="1613224185533" />
-    <state width="1237" height="139" key="GridCell.Tab.1.center/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613257037258" />
-    <state width="1237" height="139" key="GridCell.Tab.1.left" timestamp="1613257037258">
+    <state width="1237" height="298" key="GridCell.Tab.1.center/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613344293466" />
+    <state width="1237" height="298" key="GridCell.Tab.1.left" timestamp="1613344293466">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1877" height="164" key="GridCell.Tab.1.left/0.0.1280.680/-1920.-457.1920.1040@-1920.-457.1920.1040" timestamp="1613224185533" />
-    <state width="1237" height="139" key="GridCell.Tab.1.left/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613257037258" />
-    <state width="1237" height="139" key="GridCell.Tab.1.right" timestamp="1613257037258">
+    <state width="1237" height="298" key="GridCell.Tab.1.left/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613344293466" />
+    <state width="1237" height="298" key="GridCell.Tab.1.right" timestamp="1613344293466">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1877" height="164" key="GridCell.Tab.1.right/0.0.1280.680/-1920.-457.1920.1040@-1920.-457.1920.1040" timestamp="1613224185533" />
-    <state width="1237" height="139" key="GridCell.Tab.1.right/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613257037258" />
-    <state width="1237" height="139" key="GridCell.Tab.2.bottom" timestamp="1613257037258">
+    <state width="1237" height="298" key="GridCell.Tab.1.right/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613344293466" />
+    <state width="1237" height="298" key="GridCell.Tab.2.bottom" timestamp="1613344277144">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1877" height="164" key="GridCell.Tab.2.bottom/0.0.1280.680/-1920.-457.1920.1040@-1920.-457.1920.1040" timestamp="1613224185533" />
-    <state width="1237" height="139" key="GridCell.Tab.2.bottom/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613257037258" />
-    <state width="1237" height="139" key="GridCell.Tab.2.center" timestamp="1613257037258">
+    <state width="1237" height="298" key="GridCell.Tab.2.bottom/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613344277144" />
+    <state width="1237" height="298" key="GridCell.Tab.2.center" timestamp="1613344277144">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1877" height="164" key="GridCell.Tab.2.center/0.0.1280.680/-1920.-457.1920.1040@-1920.-457.1920.1040" timestamp="1613224185533" />
-    <state width="1237" height="139" key="GridCell.Tab.2.center/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613257037258" />
-    <state width="1237" height="139" key="GridCell.Tab.2.left" timestamp="1613257037258">
+    <state width="1237" height="298" key="GridCell.Tab.2.center/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613344277144" />
+    <state width="1237" height="298" key="GridCell.Tab.2.left" timestamp="1613344277144">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1877" height="164" key="GridCell.Tab.2.left/0.0.1280.680/-1920.-457.1920.1040@-1920.-457.1920.1040" timestamp="1613224185533" />
-    <state width="1237" height="139" key="GridCell.Tab.2.left/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613257037258" />
-    <state width="1237" height="139" key="GridCell.Tab.2.right" timestamp="1613257037258">
+    <state width="1237" height="298" key="GridCell.Tab.2.left/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613344277144" />
+    <state width="1237" height="298" key="GridCell.Tab.2.right" timestamp="1613344277144">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1877" height="164" key="GridCell.Tab.2.right/0.0.1280.680/-1920.-457.1920.1040@-1920.-457.1920.1040" timestamp="1613224185533" />
-    <state width="1237" height="139" key="GridCell.Tab.2.right/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613257037258" />
-    <state width="1237" height="139" key="GridCell.Tab.3.bottom" timestamp="1613257037258">
+    <state width="1237" height="298" key="GridCell.Tab.2.right/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613344277144" />
+    <state width="1237" height="298" key="GridCell.Tab.3.bottom" timestamp="1613344277144">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1877" height="164" key="GridCell.Tab.3.bottom/0.0.1280.680/-1920.-457.1920.1040@-1920.-457.1920.1040" timestamp="1613224185534" />
-    <state width="1237" height="139" key="GridCell.Tab.3.bottom/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613257037258" />
-    <state width="1237" height="139" key="GridCell.Tab.3.center" timestamp="1613257037258">
+    <state width="1237" height="298" key="GridCell.Tab.3.bottom/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613344277144" />
+    <state width="1237" height="298" key="GridCell.Tab.3.center" timestamp="1613344277144">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1877" height="164" key="GridCell.Tab.3.center/0.0.1280.680/-1920.-457.1920.1040@-1920.-457.1920.1040" timestamp="1613224185533" />
-    <state width="1237" height="139" key="GridCell.Tab.3.center/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613257037258" />
-    <state width="1237" height="139" key="GridCell.Tab.3.left" timestamp="1613257037258">
+    <state width="1237" height="298" key="GridCell.Tab.3.center/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613344277144" />
+    <state width="1237" height="298" key="GridCell.Tab.3.left" timestamp="1613344277144">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1877" height="164" key="GridCell.Tab.3.left/0.0.1280.680/-1920.-457.1920.1040@-1920.-457.1920.1040" timestamp="1613224185533" />
-    <state width="1237" height="139" key="GridCell.Tab.3.left/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613257037258" />
-    <state width="1237" height="139" key="GridCell.Tab.3.right" timestamp="1613257037258">
+    <state width="1237" height="298" key="GridCell.Tab.3.left/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613344277144" />
+    <state width="1237" height="298" key="GridCell.Tab.3.right" timestamp="1613344277144">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1877" height="164" key="GridCell.Tab.3.right/0.0.1280.680/-1920.-457.1920.1040@-1920.-457.1920.1040" timestamp="1613224185534" />
-    <state width="1237" height="139" key="GridCell.Tab.3.right/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613257037258" />
-    <state width="1237" height="139" key="GridCell.Tab.4.bottom" timestamp="1613257037258">
+    <state width="1237" height="298" key="GridCell.Tab.3.right/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613344277144" />
+    <state width="1237" height="298" key="GridCell.Tab.4.bottom" timestamp="1613344277145">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1877" height="164" key="GridCell.Tab.4.bottom/0.0.1280.680/-1920.-457.1920.1040@-1920.-457.1920.1040" timestamp="1613224185534" />
-    <state width="1237" height="139" key="GridCell.Tab.4.bottom/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613257037258" />
-    <state width="1237" height="139" key="GridCell.Tab.4.center" timestamp="1613257037258">
+    <state width="1237" height="298" key="GridCell.Tab.4.bottom/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613344277145" />
+    <state width="1237" height="298" key="GridCell.Tab.4.center" timestamp="1613344277145">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1877" height="164" key="GridCell.Tab.4.center/0.0.1280.680/-1920.-457.1920.1040@-1920.-457.1920.1040" timestamp="1613224185534" />
-    <state width="1237" height="139" key="GridCell.Tab.4.center/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613257037258" />
-    <state width="1237" height="139" key="GridCell.Tab.4.left" timestamp="1613257037258">
+    <state width="1237" height="298" key="GridCell.Tab.4.center/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613344277145" />
+    <state width="1237" height="298" key="GridCell.Tab.4.left" timestamp="1613344277144">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1877" height="164" key="GridCell.Tab.4.left/0.0.1280.680/-1920.-457.1920.1040@-1920.-457.1920.1040" timestamp="1613224185534" />
-    <state width="1237" height="139" key="GridCell.Tab.4.left/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613257037258" />
-    <state width="1237" height="139" key="GridCell.Tab.4.right" timestamp="1613257037258">
+    <state width="1237" height="298" key="GridCell.Tab.4.left/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613344277144" />
+    <state width="1237" height="298" key="GridCell.Tab.4.right" timestamp="1613344277145">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state width="1877" height="164" key="GridCell.Tab.4.right/0.0.1280.680/-1920.-457.1920.1040@-1920.-457.1920.1040" timestamp="1613224185534" />
-    <state width="1237" height="139" key="GridCell.Tab.4.right/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613257037258" />
+    <state width="1237" height="298" key="GridCell.Tab.4.right/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613344277145" />
     <state x="233" y="73" key="Rider.ProjectTemplateDialog.Size" timestamp="1613085659143">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
@@ -333,9 +359,71 @@
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="157" y="0" key="SettingsEditor/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613087394597" />
+    <state width="647" height="347" key="XDebugger.FullValuePopup" timestamp="1613339658672">
+      <screen x="0" y="0" width="1280" height="680" />
+    </state>
+    <state width="647" height="347" key="XDebugger.FullValuePopup/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613339658672" />
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup" timestamp="1613219437098">
       <screen x="0" y="0" width="1280" height="680" />
     </state>
     <state x="303" y="1" width="672" height="678" key="search.everywhere.popup/0.0.1280.680/-1920.-457.1920.1040@0.0.1280.680" timestamp="1613219437098" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Party.WebApi/Controllers/UserController.cs</url>
+          <line>28</line>
+          <properties documentPath="C:\Users\Mykhailo\source\repos\Party.WebApi\Party.WebApi\Controllers\UserController.cs" initialLine="27">
+            <startOffsets>
+              <option value="845" />
+            </startOffsets>
+            <endOffsets>
+              <option value="896" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Party.Core/UserServices.cs</url>
+          <line>38</line>
+          <properties documentPath="C:\Users\Mykhailo\source\repos\Party.WebApi\Party.Core\UserServices.cs" initialLine="36">
+            <startOffsets>
+              <option value="1137" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1154" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Party.Core/UserServices.cs</url>
+          <line>16</line>
+          <properties documentPath="C:\Users\Mykhailo\source\repos\Party.WebApi\Party.Core\UserServices.cs" initialLine="16">
+            <startOffsets>
+              <option value="400" />
+            </startOffsets>
+            <endOffsets>
+              <option value="666" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Party.Core/UserServices.cs</url>
+          <line>37</line>
+          <properties documentPath="C:\Users\Mykhailo\source\repos\Party.WebApi\Party.Core\UserServices.cs" initialLine="35">
+            <startOffsets>
+              <option value="1096" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1124" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

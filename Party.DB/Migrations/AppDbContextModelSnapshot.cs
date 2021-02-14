@@ -130,8 +130,8 @@ namespace Party.DB.Migrations
                     b.Property<int>("IdPreferencja")
                         .HasColumnType("int");
 
-                    b.Property<int>("IdUczestnik")
-                        .HasColumnType("int");
+                    b.Property<string>("IdUczestnik")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<int>("IdPreferencjaUczestnika")
                         .HasColumnType("int");
@@ -166,10 +166,8 @@ namespace Party.DB.Migrations
 
             modelBuilder.Entity("Party.DB.Tworca", b =>
                 {
-                    b.Property<int>("IdOsoba")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                    b.Property<string>("IdOsoba")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -200,10 +198,8 @@ namespace Party.DB.Migrations
 
             modelBuilder.Entity("Party.DB.Uczestnik", b =>
                 {
-                    b.Property<int>("IdOsoba")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                    b.Property<string>("IdOsoba")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<string>("Email")
                         .IsRequired()
@@ -234,8 +230,8 @@ namespace Party.DB.Migrations
                     b.Property<int>("IdWydarzenie")
                         .HasColumnType("int");
 
-                    b.Property<int>("IdUczestnik")
-                        .HasColumnType("int");
+                    b.Property<string>("IdUczestnik")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<int>("IdUczestnikWydarzenie")
                         .HasColumnType("int");
@@ -260,8 +256,8 @@ namespace Party.DB.Migrations
                     b.Property<string>("Opis")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("TworcaIdOsoba")
-                        .HasColumnType("int");
+                    b.Property<string>("TworcaIdOsoba")
+                        .HasColumnType("nvarchar(450)");
 
                     b.Property<int>("Typ")
                         .HasColumnType("int");

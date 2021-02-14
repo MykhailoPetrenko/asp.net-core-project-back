@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 
 namespace Party.Core
@@ -37,6 +38,14 @@ namespace Party.Core
         public IEnumerable<Wydarzenie> GetWydarzeniaByDate(DateTime data)
         {
             return _context.Wydarzenies.Where(w => w.DataPrzeprowadzenia == data).ToList();
+        }
+        public async Task<Wydarzenie> CreateWydarzenie(Wydarzenie wydarzenie, string userId)
+        {
+            var tworca = _context.Tworca.FirstOrDefault(t => t.IdOsoba == userId);
+            wydarzenie.Tworca = tworca;
+            _context.Wydarzenies.Add(wydarzenie);
+            await _context.SaveChangesAsync();
+            return wydarzenie;
         }
     }
 }

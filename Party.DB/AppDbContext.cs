@@ -43,6 +43,7 @@ namespace Party.DB
         
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            
             //Preferencja Uczestnika
             modelBuilder.Entity<PreferencjaUczestnika>()
                 .HasKey(pr => new { pr.IdPreferencja,pr.IdUczestnik });  

@@ -56,6 +56,7 @@ namespace Party.WebApi
                      options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore
                 );
             services.AddTransient<IPartyService, PartyServices>();
+            services.AddTransient<IUserServises, UserServices>();
 
         }
 
