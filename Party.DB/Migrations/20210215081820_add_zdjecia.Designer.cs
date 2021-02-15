@@ -3,15 +3,17 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Party.DB;
 
 namespace Party.DB.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20210215081820_add_zdjecia")]
+    partial class add_zdjecia
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -145,22 +147,21 @@ namespace Party.DB.Migrations
 
             modelBuilder.Entity("Party.DB.Skarga", b =>
                 {
-                    b.Property<int>("IdWydarzenie")
-                        .HasColumnType("int");
-
-                    b.Property<string>("IdUczestnik")
-                        .HasColumnType("nvarchar(450)");
-
                     b.Property<int>("IdSkarga")
-                        .HasColumnType("int");
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Tresc")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.HasKey("IdWydarzenie", "IdUczestnik");
+                    b.Property<int?>("WydarzenieIdWydarzenie")
+                        .HasColumnType("int");
 
-                    b.HasIndex("IdUczestnik");
+                    b.HasKey("IdSkarga");
+
+                    b.HasIndex("WydarzenieIdWydarzenie");
 
                     b.ToTable("Skarga");
                 });
@@ -383,17 +384,9 @@ namespace Party.DB.Migrations
 
             modelBuilder.Entity("Party.DB.Skarga", b =>
                 {
-                    b.HasOne("Party.DB.Uczestnik", "Uczestnik")
-                        .WithMany("Skarga")
-                        .HasForeignKey("IdUczestnik")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("Party.DB.Wydarzenie", "Wydarzenie")
                         .WithMany("Skarga")
-                        .HasForeignKey("IdWydarzenie")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("WydarzenieIdWydarzenie");
                 });
 
             modelBuilder.Entity("Party.DB.UczestnikWydarzenie", b =>

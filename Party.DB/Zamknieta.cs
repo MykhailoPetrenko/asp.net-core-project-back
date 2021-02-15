@@ -2,11 +2,9 @@
 
 namespace Party.DB
 {
-    public class Zamknieta
+    public class Zamknieta: Wydarzenie
     {
-        [Key]
-        public int IdZamknieta { get; set; }
-        [Required]
+       [Required]
         public string Haslo { get; set; }
     }
 }

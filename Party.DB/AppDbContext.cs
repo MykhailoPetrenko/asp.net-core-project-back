@@ -36,6 +36,8 @@ namespace Party.DB
         public DbSet<Kategoria> Kategoria { get; set; }
         public DbSet<WydarzenieKategoria> WydarzenieKategoria { get; set; }
         public DbSet<UczestnikWydarzenie> UczestnikWydarzenie { get; set; }
+
+        public DbSet<Zdjecie> Zdjecia { get; set; }
  
 
 
@@ -72,18 +74,39 @@ namespace Party.DB
                 .HasOne(bc => bc.IdMiejsceNavigation)
                 .WithMany(c => c.WydarzenieMiejsce)
                 .HasForeignKey(bc => bc.IdMiejsce);
-            //Wydarzenie Skarga
-            modelBuilder.Entity<Wydarzenie>()
-                .HasMany(c => c.Skarga)
-                .WithOne(e => e.Wydarzenie);
+            //Wydarzenie Skarga Uczestnik
+            modelBuilder.Entity<Skarga>()
+              .HasKey(pr => new { pr.IdWydarzenie, pr.IdUczestnik });
+            modelBuilder.Entity<Skarga>()
+                .HasOne(bc => bc.Wydarzenie)
+                .WithMany(b => b.Skarga)
+                .HasForeignKey(bc => bc.IdWydarzenie);
+            modelBuilder.Entity<Skarga>()
+                .HasOne(bc => bc.Uczestnik)
+                .WithMany(c => c.Skarga)
+                .HasForeignKey(bc => bc.IdUczestnik);
             //Wydarzenie Kometaz
-            modelBuilder.Entity<Wydarzenie>()
-                .HasMany(c => c.Kometaze)
-                .WithOne(e => e.Wydarzenie);
+            modelBuilder.Entity<Kometaz>()
+             .HasKey(pr => new { pr.IdWydarzenie, pr.IdUczestnik });
+            modelBuilder.Entity<Kometaz>()
+                .HasOne(bc => bc.Wydarzenie)
+                .WithMany(b => b.Kometaze)
+                .HasForeignKey(bc => bc.IdWydarzenie);
+            modelBuilder.Entity<Kometaz>()
+                .HasOne(bc => bc.Uczestnik)
+                .WithMany(c => c.Kometaz)
+                .HasForeignKey(bc => bc.IdUczestnik);
             //Wydarzenie Ocena
-            modelBuilder.Entity<Wydarzenie>()
-                .HasMany(c => c.Oceny)
-                .WithOne(e => e.Wydarzenie);
+            modelBuilder.Entity<Ocena>()
+             .HasKey(pr => new { pr.IdWydarzenie, pr.IdUczestnik });
+            modelBuilder.Entity<Ocena>()
+                .HasOne(bc => bc.Wydarzenie)
+                .WithMany(b => b.Oceny)
+                .HasForeignKey(bc => bc.IdWydarzenie);
+            modelBuilder.Entity<Ocena>()
+                .HasOne(bc => bc.Uczestnik)
+                .WithMany(c => c.Ocena)
+                .HasForeignKey(bc => bc.IdUczestnik);
 
             //Wydarzenie KAtegoria
             modelBuilder.Entity<WydarzenieKategoria>()
@@ -107,6 +130,17 @@ namespace Party.DB
                 .HasOne(bc => bc.Uczestnik)
                 .WithMany(c => c.UczestnikWydarzenie)
                 .HasForeignKey(bc => bc.IdUczestnik);
+
+            //Zdjecia
+            modelBuilder.Entity<Tworca>()
+                .HasMany(c => c.Zdjecies)
+                .WithOne(e => e.Tworca)
+                .OnDelete(DeleteBehavior.SetNull);
+
+            modelBuilder.Entity<Wydarzenie>()
+               .HasMany(c => c.Zdjecies)
+               .WithOne(e => e.Wydarzenie)
+               .OnDelete(DeleteBehavior.SetNull);
 
         }
     }

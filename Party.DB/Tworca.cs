@@ -13,5 +13,7 @@ namespace Party.DB
         public Double StanKonta { get; set; }
         
         public ICollection<Wydarzenie> Wydarzenia { get; set; }
+        public ICollection<Zdjecie> Zdjecies { get; set; }
+
     }
 }

@@ -10,5 +10,8 @@ namespace Party.DB
         public string Opis { get; set; }
         [Required]
         public string Url { get; set; }
+
+        public Tworca Tworca { get; set; }
+        public Wydarzenie Wydarzenie { get; set; }
     }
 }

@@ -9,7 +9,11 @@ namespace Party.DB
         [Required]
         [Range(0, 5)]
         public int Ilosc { get; set; }
-        
+
+        public string IdUczestnik { get; set; }
+        public int IdWydarzenie { get; set; }
+
         public Wydarzenie Wydarzenie { get; set; }
+        public Uczestnik Uczestnik { get; set; }
     }
 }

@@ -23,6 +23,7 @@ namespace Party.DB
         public ICollection<Ocena> Oceny { get; set; }
         public ICollection<WydarzenieKategoria> WydarzenieKategoria { get; set; }
         public ICollection<UczestnikWydarzenie> UczestnikWydarzenie { get; set; }
+        public ICollection<Zdjecie> Zdjecies { get; set; }
 
 
 

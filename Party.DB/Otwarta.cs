@@ -2,9 +2,8 @@
 
 namespace Party.DB
 {
-    public class Otwarta
+    public class Otwarta: Wydarzenie
     {
-        [Key]
-        public int IdOtwarta { get; set; }
+      
     }
 }
