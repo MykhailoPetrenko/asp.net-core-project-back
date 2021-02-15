@@ -18,7 +18,7 @@ namespace Party.Core
 
         public IEnumerable<Wydarzenie> GetWydarzenia()
         {
-            return _context.Wydarzenies.ToList();
+            return _context.Wydarzenies.Include(t => t.Tworca).ToList();
         }
 
         public Wydarzenie GetUczestnikiWydarzenia(int wydarzenie)

@@ -57,6 +57,7 @@ namespace Party.WebApi
                 );
             services.AddTransient<IPartyService, PartyServices>();
             services.AddTransient<IUserServises, UserServices>();
+            services.AddTransient<IUczestnikServices, UczestnikServices>();
 
         }
 
